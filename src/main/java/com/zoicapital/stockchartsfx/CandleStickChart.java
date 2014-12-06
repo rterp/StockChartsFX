@@ -55,12 +55,12 @@ public class CandleStickChart extends XYChart<String, Number> {
     protected ObservableList<XYChart.Series<String, Number>> dataSeries;
     protected BarData lastBar;
 
-    public CandleStickChart(List<BarData> bars) {
-        this(bars, Integer.MAX_VALUE);
+    public CandleStickChart(String title, List<BarData> bars) {
+        this(title, bars, Integer.MAX_VALUE);
     }
 
-    public CandleStickChart(List<BarData> bars, int maxBarsToDisplay) {
-        this(new CategoryAxis(), new NumberAxis(), bars, maxBarsToDisplay);
+    public CandleStickChart(String title, List<BarData> bars, int maxBarsToDisplay) {
+        this(title, new CategoryAxis(), new NumberAxis(), bars, maxBarsToDisplay);
     }
 
 // -------------- CONSTRUCTORS ----------------------------------------------
@@ -72,14 +72,14 @@ public class CandleStickChart extends XYChart<String, Number> {
      * @param bars
      * @param maxBarsToDisplay
      */
-    public CandleStickChart(Axis<String> xAxis, Axis<Number> yAxis, List<BarData> bars, int maxBarsToDisplay) {
+    public CandleStickChart(String title, Axis<String> xAxis, Axis<Number> yAxis, List<BarData> bars, int maxBarsToDisplay) {
         super(xAxis, yAxis);
         this.maxBarsToDisplay = maxBarsToDisplay;
         //yAxis.setLabel("Yxis");
         NumberAxis y = (NumberAxis) yAxis;
         yAxis.autoRangingProperty().set(true);
         y.forceZeroInRangeProperty().setValue(Boolean.FALSE);
-        setTitle("S&P 500 Index");
+        setTitle(title);
         setAnimated(true);
         getStylesheets().add(getClass().getResource("/styles/CandleStickChartStyles.css").toExternalForm());
         xAxis.setAnimated(true);

@@ -30,7 +30,7 @@ public class MainApp extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        CandleStickChart candleStickChart = new CandleStickChart(buildBars());
+        CandleStickChart candleStickChart = new CandleStickChart("S&P 500 Index", buildBars());
         Scene scene = new Scene(candleStickChart);
         scene.getStylesheets().add("/styles/Styles.css");
         
