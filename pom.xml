@@ -4,7 +4,7 @@
 
     <groupId>com.zoicapital</groupId>
     <artifactId>StockChartsFx</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>StockChartsFx</name>
@@ -15,8 +15,7 @@
     </properties>
 
     <organization>
-        <!-- Used as the 'Vendor' for JNLP generation -->
-        <name>Your Organisation</name>
+        <name>Zoi Capital, LLC</name>
     </organization>
 
     <build>
@@ -104,5 +103,12 @@
             </plugin>
         </plugins>
     </build>
-
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.10</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 </project>

@@ -16,6 +16,7 @@ limitations under the License.
  */
 
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
@@ -37,6 +38,8 @@ public class MainApp extends Application {
         stage.setTitle("JavaFX and Maven");
         stage.setScene(scene);
         stage.show();
+        
+        candleStickChart.setYAxisFormatter(new DecimalAxisFormatter("#000.00"));
     }
     
     
