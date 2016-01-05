@@ -219,6 +219,9 @@ public class CandleStickChart extends XYChart<String, Number> {
                     // update candle
                     candle.update(close - y, high - y, low - y, candleWidth);
 
+                    // update tooltip content
+                    candle.updateTooltip(bar.getOpen(), bar.getClose(), bar.getHigh(), bar.getLow());
+
                     // position the candle
                     candle.setLayoutX(x);
                     candle.setLayoutY(y);

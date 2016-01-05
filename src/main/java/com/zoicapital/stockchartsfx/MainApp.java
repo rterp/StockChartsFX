@@ -33,7 +33,7 @@ public class MainApp extends Application {
     public void start(Stage stage) throws Exception {
         CandleStickChart candleStickChart = new CandleStickChart("S&P 500 Index", buildBars());
         Scene scene = new Scene(candleStickChart);
-        scene.getStylesheets().add("/styles/Styles.css");
+        scene.getStylesheets().add("/styles/CandleStickChartStyles.css");
         
         stage.setTitle("JavaFX and Maven");
         stage.setScene(scene);
