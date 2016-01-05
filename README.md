@@ -28,7 +28,7 @@ $ java -jar StockChartsFx-1.0.0-SNAPSHOT.jar  (or whatever version of the .jar w
 
 ## Author
 
-- Rob Terpilowski  ::  Twitter: [@RobTerp](https://www.twitter.com/RobTerp)
+- Rob Terpilowski  ::  Twitter: [@RobTerpilowski](https://www.twitter.com/RobTerpilowski)
 
 
 ## License
